@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="ductri.falldetection.activity.DangerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:backgroundTint="#ff0011"
+        android:background="#000000"
+        android:backgroundTintMode="src_over">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/textView_Instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alert in: "
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        />
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:id="@+id/textView_Countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10s"
+        android:textSize="80sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/space"/>
+    <Button
+        android:id="@+id/button_OK"
+        style="?metaButtonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I'm OK. This is a mistake"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:background="#000"
+        android:backgroundTintMode="src_over"
+        android:layout_centerVertical="true" />
+
+
+
+
+
+    </RelativeLayout>
+</FrameLayout>
